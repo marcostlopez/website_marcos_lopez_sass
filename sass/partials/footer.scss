@@ -1,0 +1,27 @@
+/* --------- FOOTER --------- */
+.footer{
+    &_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+
+        p{
+            text-align: center;
+            color: $principal;
+            font-size: $text-lt;
+        }
+    }
+    &_list{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &_icon{
+            height: 3rem;
+            width: auto;
+            margin: 0 3rem;
+        }
+    }
+}

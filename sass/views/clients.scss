@@ -1,0 +1,17 @@
+.clientes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &_item{
+
+        figure{
+            width: 80vw;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

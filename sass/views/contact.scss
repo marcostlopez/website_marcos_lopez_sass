@@ -1,0 +1,37 @@
+.contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_image{
+        height: 35rem;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 30rem;
+        margin: auto 2rem;
+
+        label{
+            color: $principal;
+            font-size: $text-lt;
+        }
+
+        button{
+            margin: 1rem auto;
+            padding: 1rem 3rem;
+            font-size: $text-lt;
+            border-radius: 0.5rem;
+            color: $secondary;
+            background-color: $principal;
+        }
+    }
+}
+

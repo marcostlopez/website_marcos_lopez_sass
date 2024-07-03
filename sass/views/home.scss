@@ -1,0 +1,95 @@
+/* --------- HERO ---------- */
+.hero{
+    &_image{
+        position: relative;
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+    &_info{
+        position: absolute;
+        bottom: 2.4rem;
+        left: 2.4rem;
+
+        p{
+            color: $principal;
+            font-size: $text-lt;
+            margin-bottom: 0;
+        }
+
+        &>h1{
+            font-weight: 600;
+        }
+
+        .boton{
+            color: $principal;
+            font-size: $text-md;
+            font-weight: 600;
+            padding: 1rem 3rem;
+            border-radius: 0.5rem;
+            background: $secondary;
+        }
+    }
+}
+
+/* --------- HOME --------- */
+.proyectos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &_image{
+        height: 35rem;
+        width: auto;
+    }
+
+    &>div{
+        padding: 1rem;
+    }
+}
+
+/* ----------- RESPONSIVE 992px ----------- */
+@media screen and (max-width: 992px){
+    .hero{
+        &_image{
+            margin: auto 3rem;
+        }
+
+        &_info{
+            position: absolute;
+            p{
+                color: $principal;
+                font-size: $text-lt;
+                margin-bottom: 0;
+            }
+    
+            &>h1{
+                font-weight: 600;
+                font-size: $text-md;
+            }
+    
+            .boton{
+                font-size: $text-lt;
+                padding: .5rem 1.5rem;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        &_image{
+            height: 30rem;
+            width: auto;
+        }
+    
+        &>div{
+            padding: 1rem;
+        }
+    }
+}
